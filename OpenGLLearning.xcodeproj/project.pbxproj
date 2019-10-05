@@ -7,24 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC18863923489D9C0082343C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC18863823489D9C0082343C /* AppDelegate.m */; };
-		FC18863C23489D9C0082343C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC18863B23489D9C0082343C /* ViewController.m */; };
 		FC18863E23489D9D0082343C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC18863D23489D9D0082343C /* Assets.xcassets */; };
 		FC18864123489D9D0082343C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC18863F23489D9D0082343C /* Main.storyboard */; };
-		FC18864423489D9D0082343C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC18864323489D9D0082343C /* main.m */; };
+		FC18864C23489DBE0082343C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC18864B23489DBE0082343C /* main.cpp */; };
+		FC18865E23489DE10082343C /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18865D23489DE10082343C /* libGLTools.a */; };
+		FC18866123489DFA0082343C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18866023489DFA0082343C /* OpenGL.framework */; };
+		FC18866323489E0A0082343C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18866223489E0A0082343C /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC18863423489D9C0082343C /* OpenGLLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC18863723489D9C0082343C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FC18863823489D9C0082343C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC18863A23489D9C0082343C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC18863B23489D9C0082343C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC18863D23489D9D0082343C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC18864023489D9D0082343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC18864223489D9D0082343C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC18864323489D9D0082343C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC18864523489D9D0082343C /* OpenGLLearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGLLearning.entitlements; sourceTree = "<group>"; };
+		FC18864B23489DBE0082343C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FC18864E23489DCF0082343C /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		FC18864F23489DCF0082343C /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		FC18865023489DCF0082343C /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		FC18865123489DCF0082343C /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		FC18865223489DCF0082343C /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		FC18865323489DCF0082343C /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		FC18865423489DCF0082343C /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		FC18865523489DCF0082343C /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		FC18865623489DCF0082343C /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		FC18865723489DCF0082343C /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		FC18865923489DCF0082343C /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		FC18865A23489DCF0082343C /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		FC18865B23489DCF0082343C /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		FC18865C23489DCF0082343C /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		FC18865D23489DE10082343C /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		FC18866023489DFA0082343C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FC18866223489E0A0082343C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC18866323489E0A0082343C /* GLUT.framework in Frameworks */,
+				FC18866123489DFA0082343C /* OpenGL.framework in Frameworks */,
+				FC18865E23489DE10082343C /* libGLTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +60,7 @@
 			children = (
 				FC18863623489D9C0082343C /* OpenGLLearning */,
 				FC18863523489D9C0082343C /* Products */,
+				FC18865F23489DF90082343C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,17 +75,53 @@
 		FC18863623489D9C0082343C /* OpenGLLearning */ = {
 			isa = PBXGroup;
 			children = (
-				FC18863723489D9C0082343C /* AppDelegate.h */,
-				FC18863823489D9C0082343C /* AppDelegate.m */,
-				FC18863A23489D9C0082343C /* ViewController.h */,
-				FC18863B23489D9C0082343C /* ViewController.m */,
+				FC18864D23489DCF0082343C /* include */,
 				FC18863D23489D9D0082343C /* Assets.xcassets */,
 				FC18863F23489D9D0082343C /* Main.storyboard */,
 				FC18864223489D9D0082343C /* Info.plist */,
-				FC18864323489D9D0082343C /* main.m */,
+				FC18865D23489DE10082343C /* libGLTools.a */,
+				FC18864B23489DBE0082343C /* main.cpp */,
 				FC18864523489D9D0082343C /* OpenGLLearning.entitlements */,
 			);
 			path = OpenGLLearning;
+			sourceTree = "<group>";
+		};
+		FC18864D23489DCF0082343C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FC18864E23489DCF0082343C /* GLBatchBase.h */,
+				FC18864F23489DCF0082343C /* math3d.h */,
+				FC18865023489DCF0082343C /* GLTriangleBatch.h */,
+				FC18865123489DCF0082343C /* GLBatch.h */,
+				FC18865223489DCF0082343C /* GLMatrixStack.h */,
+				FC18865323489DCF0082343C /* GLFrame.h */,
+				FC18865423489DCF0082343C /* GLFrustum.h */,
+				FC18865523489DCF0082343C /* GLGeometryTransform.h */,
+				FC18865623489DCF0082343C /* GLShaderManager.h */,
+				FC18865723489DCF0082343C /* StopWatch.h */,
+				FC18865823489DCF0082343C /* GL */,
+				FC18865C23489DCF0082343C /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FC18865823489DCF0082343C /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				FC18865923489DCF0082343C /* glxew.h */,
+				FC18865A23489DCF0082343C /* wglew.h */,
+				FC18865B23489DCF0082343C /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		FC18865F23489DF90082343C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC18866223489E0A0082343C /* GLUT.framework */,
+				FC18866023489DFA0082343C /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC18863C23489D9C0082343C /* ViewController.m in Sources */,
-				FC18864423489D9D0082343C /* main.m in Sources */,
-				FC18863923489D9C0082343C /* AppDelegate.m in Sources */,
+				FC18864C23489DBE0082343C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -282,6 +334,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLLearning",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kong.OpenGLLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -301,6 +358,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLLearning",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kong.OpenGLLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
