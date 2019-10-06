@@ -9,12 +9,17 @@
 #include "GLTools.h"
 #include <GLUT/GLUT.h>
 //#include<glut/glut.h>
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 /// 着色管理器
 GLShaderManager shaderManager;
 
 /// 批次处理工具
 GLBatch batch;
+
+/// 三角形批次处理工具
+GLTriangleBatch triangleBath;
 
 // 窗口尺寸变化
 void changeSize(int w, int h);
@@ -71,6 +76,16 @@ void setupRC() {
     batch.Begin(GL_TRIANGLES, 3);
     batch.CopyVertexData3f(vArrs);
     batch.End();
+    
+    /// 三角形批次处理工具 最多使用 200 个顶点数
+    triangleBath.BeginMesh(200);
+    
+    /// 添加 3 个顶点 3个法线 3个纹理坐标的数组
+//    triangleBath.AddTriangle(<#M3DVector3f *verts#>, <#M3DVector3f *vNorms#>, <#M3DVector2f *vTexCoords#>)
+    
+    triangleBath.End();
+    
+    /// 在 renderScene 的时候调用 triangles.Draw()
 }
 
 
@@ -95,3 +110,7 @@ void renderScene() {
     glutSwapBuffers();
     
 }
+
+
+
+#pragma clang diagnostic pop
