@@ -5,6 +5,7 @@
 //  Created by konglee on 2019/10/5.
 //  Copyright © 2019 konglee. All rights reserved.
 //
+#include <iostream>
 #include "GLShaderManager.h"
 #include "GLTools.h"
 #include <GLUT/GLUT.h>
@@ -27,6 +28,12 @@ void changeSize(int w, int h);
 // 渲染屏幕
 void renderScene();
 
+// 键盘回调
+void keyboardPress(unsigned char key, int x, int y);
+
+//extern void APIENTRY glutKeyboardFunc(void (*func)(unsigned char key, int x, int y)) OPENGL_DEPRECATED(10_0, 10_9);
+
+
 // 创建
 void setupRC();
 
@@ -39,8 +46,13 @@ int main(int argc, char *argv[]) {
     glutCreateWindow("Triangle");
     
     // 注册回调函数
+    // 窗口改变函数
     glutReshapeFunc(changeSize);
     
+    // 注册键盘点击函数
+    glutKeyboardFunc(keyboardPress);
+    
+    // 窗口开始绘图
     glutDisplayFunc(renderScene);
     
     GLenum err = glewInit();
@@ -110,6 +122,13 @@ void renderScene() {
     glutSwapBuffers();
     
 }
+
+// 点击键盘
+void keyboardPress(unsigned char key, int x, int y) {
+    std::cout << "key = " << key << " x = " << x << " y = " << y << std::endl;
+}
+
+
 
 
 
