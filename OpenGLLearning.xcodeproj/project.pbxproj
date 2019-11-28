@@ -39,6 +39,7 @@
 		FC18865D23489DE10082343C /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
 		FC18866023489DFA0082343C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		FC18866223489E0A0082343C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		FC795E7023901AC3003AB1DB /* UTEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTEnums.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +81,7 @@
 				FC18863F23489D9D0082343C /* Main.storyboard */,
 				FC18864223489D9D0082343C /* Info.plist */,
 				FC18865D23489DE10082343C /* libGLTools.a */,
-				FC18864B23489DBE0082343C /* main.cpp */,
+				FC795E7223901ACD003AB1DB /* Class */,
 				FC18864523489D9D0082343C /* OpenGLLearning.entitlements */,
 			);
 			path = OpenGLLearning;
@@ -122,6 +123,15 @@
 				FC18866023489DFA0082343C /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC795E7223901ACD003AB1DB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FC18864B23489DBE0082343C /* main.cpp */,
+				FC795E7023901AC3003AB1DB /* UTEnums.h */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

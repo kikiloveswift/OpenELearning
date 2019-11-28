@@ -10,6 +10,10 @@
 #include "GLTools.h"
 #include <GLUT/GLUT.h>
 //#include<glut/glut.h>
+
+/// common tools
+#include "UTEnums.h"
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
@@ -30,6 +34,16 @@ void renderScene();
 
 // 键盘回调
 void keyboardPress(unsigned char key, int x, int y);
+
+// 特殊键盘回调
+void keyboardSpecialPress(int key, int x, int y);
+
+// 键盘向上
+void keyboardUP(unsigned char key, int x, int y);
+
+//glutKeyboardUpFunc(void (*func)(unsigned char key, int x, int y))
+
+//glutSpecialUpFunc(void (*func)(int key, int x, int y))
 
 //extern void APIENTRY glutKeyboardFunc(void (*func)(unsigned char key, int x, int y)) OPENGL_DEPRECATED(10_0, 10_9);
 
@@ -52,6 +66,9 @@ int main(int argc, char *argv[]) {
     // 注册键盘点击函数
     glutKeyboardFunc(keyboardPress);
     
+    glutSpecialFunc(keyboardSpecialPress);
+    
+    glutKeyboardUpFunc(keyboardUP);
     // 窗口开始绘图
     glutDisplayFunc(renderScene);
     
@@ -128,6 +145,42 @@ void keyboardPress(unsigned char key, int x, int y) {
     std::cout << "key = " << key << " x = " << x << " y = " << y << std::endl;
 }
 
+/// 特殊键盘点击
+void keyboardSpecialPress(int key, int x, int y) {
+    switch (key) {
+        case KeyBoardDirectionUP:
+        {
+            std::cout << "向上" << std::endl;
+        }
+            break;
+        case KeyBoardDirectionDown:
+        {
+            std::cout << "向下" << std::endl;
+        }
+            break;
+            
+        case KeyBoardDirectionLeft:
+        {
+            std::cout << "向左" << std::endl;
+        }
+            break;
+            
+        case KeyBoardDirectionRight:
+        {
+            std::cout << "向右" << std::endl;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    std::cout << "special key = " << key << " x = " << x << " y = " << y << std::endl;
+}
+
+/// 键盘向上
+void keyboardUP(unsigned char key, int x, int y) {
+    std::cout << "up key = " << key << " x = " << x << " y = " << y << std::endl;
+}
 
 
 
