@@ -13,6 +13,7 @@
 		FC18865E23489DE10082343C /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18865D23489DE10082343C /* libGLTools.a */; };
 		FC18866123489DFA0082343C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18866023489DFA0082343C /* OpenGL.framework */; };
 		FC18866323489E0A0082343C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18866223489E0A0082343C /* GLUT.framework */; };
+		FCCC5E2F239C9B8500F1A188 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCC5E2D239C9B8500F1A188 /* Shape.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		FC18866023489DFA0082343C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		FC18866223489E0A0082343C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		FC795E7023901AC3003AB1DB /* UTEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTEnums.h; sourceTree = "<group>"; };
+		FCCC5E2D239C9B8500F1A188 /* Shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		FCCC5E2E239C9B8500F1A188 /* Shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shape.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				FC18864B23489DBE0082343C /* main.cpp */,
+				FCCC5E2D239C9B8500F1A188 /* Shape.cpp */,
+				FCCC5E2E239C9B8500F1A188 /* Shape.hpp */,
 				FC795E7023901AC3003AB1DB /* UTEnums.h */,
 			);
 			path = Class;
@@ -204,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC18864C23489DBE0082343C /* main.cpp in Sources */,
+				FCCC5E2F239C9B8500F1A188 /* Shape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

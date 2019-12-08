@@ -47,6 +47,10 @@ void keyboardUP(unsigned char key, int x, int y);
 
 //extern void APIENTRY glutKeyboardFunc(void (*func)(unsigned char key, int x, int y)) OPENGL_DEPRECATED(10_0, 10_9);
 
+// glutEntryFunc(void (*func)(int state))
+
+void entryFunc(int state);
+
 
 // 创建
 void setupRC();
@@ -71,6 +75,8 @@ int main(int argc, char *argv[]) {
     glutKeyboardUpFunc(keyboardUP);
     // 窗口开始绘图
     glutDisplayFunc(renderScene);
+    
+    glutEntryFunc(entryFunc);
     
     GLenum err = glewInit();
     
@@ -181,6 +187,13 @@ void keyboardSpecialPress(int key, int x, int y) {
 void keyboardUP(unsigned char key, int x, int y) {
     std::cout << "up key = " << key << " x = " << x << " y = " << y << std::endl;
 }
+
+/// 鼠标出现在屏幕上 state 1
+/// 鼠标离开屏幕 state 0
+void entryFunc(int state) {
+    std::cout << "state = " << state << std::endl;
+}
+
 
 
 
